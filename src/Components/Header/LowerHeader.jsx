@@ -15,7 +15,7 @@ const LowerHeader = () => {
           </li>
 
           <li>Today's Deals</li>
-          <li>Costumer Services</li>
+          <li>Customer Services</li>
           <li>Registry</li>
           <li>Gift Cards</li>
           <li>Sell</li>

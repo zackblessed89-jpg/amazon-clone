@@ -56,7 +56,7 @@ const Header = () => {
             </a>
             {/* Orders */}
             <a href="">
-              <p> returns</p>
+              <p> Returns</p>
               <span> & orders</span>
             </a>
             {/* cart */}
