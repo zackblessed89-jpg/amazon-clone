@@ -8,6 +8,8 @@ import CarouselEffect from "./Components/Carousel/Carousel";
 
 import './App.css'
 import { Carousel } from "react-responsive-carousel";
+import Category from "./Components/Category/Category";
+
 
 function App() {
 
@@ -16,7 +18,8 @@ function App() {
     <>
     <Header/>
     <CarouselEffect/>
-     
+    <Category/>
+  
     </>
   )
 }
