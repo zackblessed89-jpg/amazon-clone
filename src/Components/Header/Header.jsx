@@ -45,10 +45,11 @@ const Header = () => {
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png?20240524035322"
                 alt=""
               />
-              <select name="" id="">
+              <select name= "" id=''>
                 <option value="">EN</option>
               </select>
-            </Link>
+              </Link>
+
 
             <Link to="">
               <div>

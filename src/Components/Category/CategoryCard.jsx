@@ -1,15 +1,17 @@
 import classes from "./Category.module.css";
-import Category from "./Category";
-function CategoryCard({info}) {
+// import Category from "./Category";
+import { Link } from "react-router-dom";
+function CategoryCard({infos}) {
+  console.log(infos); 
   return (
     <div className={classes.category}>
-      <a href={`/category/${info?.name}`}>
+      <Link to={`/category/${infos.name}`}>
         <span>
-          <h2>{info?.title}</h2>
+          <h2>{infos?.title}</h2>
         </span>
-        <img src={info?.imgLink} alt="" />
+        <img src={infos?.imgLink} alt=""/>
         <p>Shop now</p>
-      </a>
+      </Link>
     </div>
   );
 }

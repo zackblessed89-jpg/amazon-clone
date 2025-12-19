@@ -8,7 +8,7 @@ function Category() {
       {categoryInfos?.map((data, index) => {
         // console.log(data);
 
-        return <CategoryCard key={index} info={data} />;
+        return <CategoryCard key={index} infos={data} />;
       })}
     </section>
   );

@@ -5,6 +5,8 @@ function ProductDetail() {
   return (
     <LayOut>
       <div> ProductDetail</div>
+      
+
     </LayOut>
   );
 }
