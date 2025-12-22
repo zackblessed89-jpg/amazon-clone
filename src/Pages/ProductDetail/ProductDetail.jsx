@@ -21,9 +21,8 @@ function ProductDetail() {
         console.error(err);
       });
   }, [productId]); //  dependency added
-
-  // using product propse we will pass it
-  return <LayOut>{product && <ProductCard product={product} />}</LayOut>;
+  return <LayOut>{product && <ProductCard product={product} flex product={product} renderDesc />}</LayOut>;
 }
+
 
 export default ProductDetail;
