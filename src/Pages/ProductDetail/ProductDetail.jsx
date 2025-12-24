@@ -21,7 +21,12 @@ function ProductDetail() {
         console.error(err);
       });
   }, [productId]); //  dependency added
-  return <LayOut>{product && <ProductCard product={product} flex product={product} renderDesc />}</LayOut>;
+  return (
+    <LayOut>
+      {product && <ProductCard product={product} flex renderDesc />}
+    </LayOut>
+  );
+  
 }
 
 

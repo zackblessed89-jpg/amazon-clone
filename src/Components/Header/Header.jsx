@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {Link} from 'react-router-dom';
 import { BiCart } from "react-icons/bi";
 import classes from "./header.module.css";
 import { SlLocationPin } from "react-icons/sl";
 import { BsSearch } from "react-icons/bs";
 import LowerHeader from "./LowerHeader";
+import { DataContext } from '../DataProvider/DataProvider';
 
 
 const Header = () => {
+
+  const [{basket}]= useContext(DataContext)
+  // console.log(basket.length)
   return (
     <>
       <section>
@@ -45,11 +49,10 @@ const Header = () => {
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png?20240524035322"
                 alt=""
               />
-              <select name= "" id=''>
+              <select name="" id="">
                 <option value="">EN</option>
               </select>
-              </Link>
-
+            </Link>
 
             <Link to="">
               <div>
@@ -65,7 +68,7 @@ const Header = () => {
             {/* cart */}
             <Link to="/Cart" className={classes.cart}>
               <BiCart size={35} />
-              <span>0</span>
+              <span>{basket.length}</span>
             </Link>
           </div>
         </div>
