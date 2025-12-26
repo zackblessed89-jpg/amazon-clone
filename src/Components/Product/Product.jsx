@@ -20,7 +20,7 @@ function Product() {
   return (
     <section className={classes.products_container}>
       {products.map((product) => {
-        return <ProductCard product={product} key={product.id} />;
+        return <ProductCard renderAdd= {true} product={product} key={product.id} />;
       })}
     </section>
   );

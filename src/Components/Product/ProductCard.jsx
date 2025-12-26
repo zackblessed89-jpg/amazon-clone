@@ -7,8 +7,8 @@ import { DataContext } from '../DataProvider/DataProvider';
 import { Type } from '../../Utility/action.type';
 
 
-function ProductCard({ product, flex, renderDesc }) {
-  const { image, title, id, rating, price, description} = product;
+function ProductCard({ product, flex, renderDesc, renderAdd}) {
+  const { image, title, id, rating, price, description } = product;
   const [state, dispatch] = useContext(DataContext);
   const isInBasket = state.basket?.some((item) => item.id === product.id);
   // console.log(state) 
@@ -35,7 +35,7 @@ function ProductCard({ product, flex, renderDesc }) {
         {renderDesc && <div style={{ maxWidth: "750px" }}> {description}</div>}
         <div className={classes.rating}>
           {/* rating */}
-          <Rating value={rating?.rate || 0} precision={0.1} readOnly />
+          <Rating value={rating?.rate || 0} precision={0.1} />
 
           {/* count */}
           <small> {rating?.count}</small>
@@ -44,10 +44,16 @@ function ProductCard({ product, flex, renderDesc }) {
           {/* price */}
           <CurrencyFormat amount={price} />
         </div>
-        {/*button  */}
-        <button onClick={addToCart} disabled={isInBasket}>
-          {isInBasket ? "In Basket" : "Add to Cart"}
-        </button>
+        {
+        renderAdd && (
+          <button
+            className={classes.button}
+            onClick={addToCart}
+            disabled={isInBasket}
+          >
+            {isInBasket ? "In Basket" : "Add to Cart"}
+          </button>
+        )}
       </div>
     </div>
   );
