@@ -16,7 +16,13 @@ function ProductCard({ product, flex, renderDesc, renderAdd}) {
   const addToCart = () => {
     dispatch({
       type: Type.ADD_TO_BASKET,
-      payload: product,
+      item: {
+        id,
+        title,
+        price,
+        image,
+        description,
+      },
     });
   };
 
