@@ -57,12 +57,13 @@ const Header = () => {
               </select>
             </Link>
 
-            <Link to="">
-              <div>
+            <Link to="/auth" className={classes.navLink}>
+              <div className={classes.navAccount}>
                 <p>Sign In</p>
-                <span>Account & Lists</span>
+                <span>Account &amp; Lists</span>
               </div>
             </Link>
+
             {/* Orders */}
             <Link to="/Orders">
               <p> Returns</p>

@@ -103,6 +103,29 @@
 .language img{
     width: 40%;
 }
+
+.navLink {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navAccount {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navAccount p {
+    margin: 0;
+    font-size: 12px;
+  }
+  
+  .navAccount span {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+
+
 .cart {
     position: relative;
 }
