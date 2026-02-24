@@ -1,0 +1,133 @@
+.payment__header{
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    background-color: rgb 234,237,237;
+}
+
+.payment__part{
+    padding: 30px;
+}
+.flex{
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+
+}
+
+.flex h3 {
+    min-width: 300px;
+}
+.flex img {
+    width: 60px;
+    display: flex;
+    
+
+}
+/* .flex div {
+    height: auto;
+} */
+
+.payment__totalprice p{
+padding-bottom: 10px;
+}
+
+
+
+
+.payment__header {
+    background-color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .payment__part {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .StripeElement {
+    padding: 12px;
+    border: 1px solid #ccc;
+    background: white;
+  }
+  
+
+
+
+
+  .flex {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .flex h3 {
+    min-width: 200px;
+  }
+  
+  .payment__form {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .payment__form button {
+    background: #f0c14b;
+    border: 1px solid #a88734;
+    color: #111;
+    width: 100%;
+    height: 36px;
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .payment__form button:disabled {
+    background: #ddd;
+    border-color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  .error {
+    color: #d93025;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid lightgray;
+    margin: 10px 0;
+  }
+  
+  /* Stripe CardElement styling */
+  .StripeElement {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    background-color: white;
+  }
+  
+  .StripeElement--focus {
+    border-color: #f0c14b;
+  }
+  
+  .StripeElement--invalid {
+    border-color: #d93025;
+  }
+  
+  .StripeElement--complete {
+    border-color: #4caf50;
+  }
+  
+
+  /* mobile responsive */
+  @media screen and (max-width: 768px) {
+    .flex {
+      flex-direction: column;
+    }
+  }
+  
